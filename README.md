@@ -6,7 +6,6 @@
 
 Built with Kotlin and Jetpack Compose — one original mechanic (perspective-lock), one twist (water-tilt), no game engine, no ads, no third-party IP.
 
-| | |
 |---|---|
 | **Platform** | Android (minSdk 26, targetSdk 36) |
 | **Language / UI** | Kotlin, Jetpack Compose (custom `Canvas` rendering) |
@@ -225,25 +224,6 @@ Levels are JSON so level design is text editing and judges can read the puzzles 
 
 Murals are original flat-color vector scenes composed directly in `MuralScreen` (token-driven colors, light/dark aware) — an asset pipeline is deliberately not needed.
 
-### Project layout
-
-```
-app/src/main/
-  kotlin/com/baori/game/
-    BaoriApplication.kt      app shell, RevenueCat config, DI graph
-    MainActivity.kt          Compose root + navigation
-    engine/                  pure, unit-tested game math
-    data/                    repository, DataStore, billing wrapper
-    data/model/Level.kt      serializable level contract
-    ui/screens/              Menu, Game, StepwellScene, Mural, Paywall
-    ui/components/           buttons, toggles, focus ring, tokens
-    ui/theme/                color/type/motion/shape tokens (both palettes)
-    viewmodel/               one ViewModel per screen
-  assets/levels/             level1..5.json + index.json
-  res/                       icons, strings (a11y labels), window theme
-app/src/test/                JVM unit tests (engine + data)
-```
-
 ---
 
 ## Testing
@@ -292,21 +272,6 @@ All game art, level geometry, and murals are **original** and generated in-code;
 | DataStore Preferences | Apache-2.0 |
 | RevenueCat `purchases-android` | MIT |
 | JUnit 4 | EPL-1.0 |
-
-(Verify each against the artifact's distribution when cutting the release.)
-
----
-
-## Compliance checklist (submission)
-
-- [x] No Monument Valley assets, characters, layouts, palette, typography, or music
-- [x] All art original / generated in code; third-party libraries credited above
-- [x] LICENSE (MIT, © Bharadwaj) visible at repo root
-- [x] Builds and runs from a clean clone, with or without a RevenueCat key
-- [x] `ARCHITECTURE.md` present at repo root with diagram and design decisions
-- [ ] No API keys ever committed (keep `local.properties` gitignored — it already is)
-- [ ] Demo video ≤ 2 min, recorded on a real device
-- [ ] Public repo URL + video submitted on Devpost before the deadline
 
 ## License
 
