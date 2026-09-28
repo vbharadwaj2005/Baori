@@ -6,6 +6,7 @@
 
 Built with Kotlin and Jetpack Compose — one original mechanic (perspective-lock), one twist (water-tilt), no game engine, no ads, no third-party IP.
 
+| | |
 |---|---|
 | **Platform** | Android (minSdk 26, targetSdk 36) |
 | **Language / UI** | Kotlin, Jetpack Compose (custom `Canvas` rendering) |
