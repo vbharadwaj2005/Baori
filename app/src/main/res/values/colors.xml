@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Resource-layer mirrors of the Compose semantic tokens defined in
+         ui/theme/Color.kt (sun-baked light scheme). They only exist for the
+         window background shown before Compose draws its first frame.
+         All in-app colors come from the token system, never from raw values. -->
+    <color name="baori_window_background">#F4EBDC</color>
+    <color name="ic_launcher_background">#B4532A</color>
+</resources>

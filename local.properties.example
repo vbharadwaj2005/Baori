@@ -1,0 +1,4 @@
+# Copy this file to `local.properties` (already gitignored) and paste your own key.
+# Get a Test Store API key from https://app.revenuecat.com -> Project Settings -> API Keys.
+# Never commit a real key. See README.md, section "Supplying your own RevenueCat key".
+REVENUECAT_API_KEY=REPLACE_WITH_YOUR_REVENUECAT_TEST_API_KEY

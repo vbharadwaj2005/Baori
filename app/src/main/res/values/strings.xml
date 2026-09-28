@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baori</string>
+
+    <!-- Accessibility labels. Every mechanic is playable without reading text,
+         but interactive controls remain describable for TalkBack users. -->
+    <string name="cd_back">Go back</string>
+    <string name="cd_continue">Continue</string>
+    <string name="cd_play">Play the next level</string>
+    <string name="cd_level_completed">Level completed</string>
+    <string name="cd_level_locked">Level locked</string>
+    <string name="cd_level_purchase_required">Level requires the full journey purchase</string>
+    <string name="cd_reduce_motion">Reduce motion</string>
+    <string name="cd_theme">Color theme</string>
+    <string name="cd_well_glyph">Decorative stepwell glyph</string>
+</resources>

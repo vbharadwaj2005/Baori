@@ -1,0 +1,82 @@
+{
+  "id": "level4",
+  "order": 4,
+  "free": false,
+  "goalAnglesDeg": [240, 330],
+  "toleranceDeg": 5,
+  "snapStepDeg": 15,
+  "startAngleDeg": 0,
+  "water": {
+    "fullWaterAngleDeg": 90,
+    "spanDeg": 60,
+    "maxHeightUnits": 1.2
+  },
+  "startNode": "dry_shelf",
+  "goalNode": "low_gallery",
+  "muralAfter": "mural_4",
+  "segments": [
+    {
+      "id": "s4_shelf_west",
+      "a": "dry_shelf",
+      "b": "west_shelf",
+      "alignsAtDeg": 0,
+      "toleranceDeg": 90,
+      "start": { "x": -2.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": -1.1, "y": -0.5, "z": 0.0 }
+    },
+    {
+      "id": "s4_west_mid",
+      "a": "west_shelf",
+      "b": "mid_landing",
+      "alignsAtDeg": 240,
+      "toleranceDeg": 5,
+      "start": { "x": -1.1, "y": -0.5, "z": 0.0 },
+      "end":   { "x": -0.2, "y": -0.9, "z": 0.9 }
+    },
+    {
+      "id": "s4_mid_gallery",
+      "a": "mid_landing",
+      "b": "sunken_gallery",
+      "alignsAtDeg": 330,
+      "toleranceDeg": 5,
+      "start": { "x": -0.2, "y": -0.9, "z": 0.9 },
+      "end":   { "x": 0.6,  "y": -1.0, "z": 0.3 }
+    },
+    {
+      "id": "s4_gallery_low",
+      "a": "sunken_gallery",
+      "b": "low_gallery",
+      "alignsAtDeg": 330,
+      "toleranceDeg": 5,
+      "start": { "x": 0.6, "y": -1.0, "z": 0.3 },
+      "end":   { "x": 1.2, "y": -1.6, "z": 0.0 }
+    },
+    {
+      "id": "s4_flooded_direct",
+      "a": "west_shelf",
+      "b": "flooded_ledge",
+      "alignsAtDeg": 90,
+      "toleranceDeg": 5,
+      "start": { "x": -1.1, "y": -0.5, "z": 0.0 },
+      "end":   { "x": -0.6, "y": -1.6, "z": 0.5 }
+    },
+    {
+      "id": "s4_high_alcove",
+      "a": "west_shelf",
+      "b": "high_alcove",
+      "alignsAtDeg": 300,
+      "toleranceDeg": 4,
+      "start": { "x": -1.1, "y": -0.5, "z": 0.0 },
+      "end":   { "x": -0.5, "y": -0.2, "z": -0.9 }
+    },
+    {
+      "id": "s4_alcove_wall",
+      "a": "high_alcove",
+      "b": "alcove_end",
+      "alignsAtDeg": 180,
+      "toleranceDeg": 4,
+      "start": { "x": -0.5, "y": -0.2, "z": -0.9 },
+      "end":   { "x": 0.3,  "y": -0.4, "z": -0.6 }
+    }
+  ]
+}

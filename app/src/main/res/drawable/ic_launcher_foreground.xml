@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original flat-color launcher art: a marigold sun over the descending
+     steps of a stepwell, drawn from the game's own token palette. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Sun -->
+    <path
+        android:fillColor="#E8B04B"
+        android:pathData="M54,18a11,11 0 1,0 0.01,0z" />
+
+    <!-- Descending stepwell steps -->
+    <path
+        android:fillColor="#F4EBDC"
+        android:pathData="M22,58h64v8h-64z" />
+    <path
+        android:fillColor="#F4EBDC"
+        android:pathData="M32,72h44v8h-44z" />
+    <path
+        android:fillColor="#F4EBDC"
+        android:pathData="M42,86h24v8h-24z" />
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Platform theme only; all real styling happens in Compose via the
+         BaoriTheme token system. The windowBackground just avoids a flash of
+         the wrong color before the first Compose frame. -->
+    <style name="Theme.Baori" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/baori_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

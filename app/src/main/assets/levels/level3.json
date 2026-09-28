@@ -1,0 +1,60 @@
+{
+  "id": "level3",
+  "order": 3,
+  "free": true,
+  "goalAnglesDeg": [45, 135, 225],
+  "toleranceDeg": 8,
+  "snapStepDeg": 15,
+  "startAngleDeg": 0,
+  "water": null,
+  "startNode": "ledge_start",
+  "goalNode": "memory_pool",
+  "muralAfter": "mural_3",
+  "segments": [
+    {
+      "id": "s3_start_a",
+      "a": "ledge_start",
+      "b": "ledge_a",
+      "alignsAtDeg": 45,
+      "toleranceDeg": 8,
+      "start": { "x": -2.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": -1.0, "y": -0.6, "z": 0.0 }
+    },
+    {
+      "id": "s3_bridge",
+      "a": "ledge_a",
+      "b": "ledge_b",
+      "alignsAtDeg": 135,
+      "toleranceDeg": 2,
+      "start": { "x": -1.0, "y": -0.6, "z": 0.0 },
+      "end":   { "x": 0.0,  "y": -1.2, "z": 0.8 }
+    },
+    {
+      "id": "s3_b_goal",
+      "a": "ledge_b",
+      "b": "memory_pool",
+      "alignsAtDeg": 225,
+      "toleranceDeg": 8,
+      "start": { "x": 0.0, "y": -1.2, "z": 0.8 },
+      "end":   { "x": 1.0, "y": -1.8, "z": 0.0 }
+    },
+    {
+      "id": "s3_decoy_high",
+      "a": "ledge_a",
+      "b": "shadow_stair",
+      "alignsAtDeg": 315,
+      "toleranceDeg": 4,
+      "start": { "x": -1.0, "y": -0.6, "z": 0.0 },
+      "end":   { "x": 0.2,  "y": -0.4, "z": -1.0 }
+    },
+    {
+      "id": "s3_decoy_far",
+      "a": "shadow_stair",
+      "b": "shadow_landing",
+      "alignsAtDeg": 45,
+      "toleranceDeg": 4,
+      "start": { "x": 0.2,  "y": -0.4, "z": -1.0 },
+      "end":   { "x": 1.0,  "y": -0.9, "z": -0.6 }
+    }
+  ]
+}

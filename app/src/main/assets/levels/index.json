@@ -1,0 +1,9 @@
+{
+  "levels": [
+    { "id": "level1", "file": "level1.json", "free": true },
+    { "id": "level2", "file": "level2.json", "free": true },
+    { "id": "level3", "file": "level3.json", "free": true },
+    { "id": "level4", "file": "level4.json", "free": false },
+    { "id": "level5", "file": "level5.json", "free": false }
+  ]
+}

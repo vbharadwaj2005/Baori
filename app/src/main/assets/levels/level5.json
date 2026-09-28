@@ -1,0 +1,82 @@
+{
+  "id": "level5",
+  "order": 5,
+  "free": false,
+  "goalAnglesDeg": [0, 90, 270],
+  "toleranceDeg": 6,
+  "snapStepDeg": 15,
+  "startAngleDeg": 90,
+  "water": {
+    "fullWaterAngleDeg": 90,
+    "spanDeg": 75,
+    "maxHeightUnits": 1.5
+  },
+  "startNode": "rim",
+  "goalNode": "the_water",
+  "muralAfter": "mural_5",
+  "segments": [
+    {
+      "id": "s5_rim_first",
+      "a": "rim",
+      "b": "first_step",
+      "alignsAtDeg": 0,
+      "toleranceDeg": 90,
+      "start": { "x": -2.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": -1.2, "y": -0.6, "z": 0.0 }
+    },
+    {
+      "id": "s5_first_drowned",
+      "a": "first_step",
+      "b": "hidden_stair",
+      "alignsAtDeg": 270,
+      "toleranceDeg": 6,
+      "start": { "x": -1.2, "y": -0.6, "z": 0.0 },
+      "end":   { "x": -0.3, "y": -1.0, "z": 0.6 }
+    },
+    {
+      "id": "s5_hidden_second",
+      "a": "hidden_stair",
+      "b": "second_step",
+      "alignsAtDeg": 270,
+      "toleranceDeg": 6,
+      "start": { "x": -0.3, "y": -1.0, "z": 0.6 },
+      "end":   { "x": 0.3,  "y": -1.4, "z": 0.2 }
+    },
+    {
+      "id": "s5_second_water",
+      "a": "second_step",
+      "b": "the_water",
+      "alignsAtDeg": 0,
+      "toleranceDeg": 6,
+      "start": { "x": 0.3, "y": -1.4, "z": 0.2 },
+      "end":   { "x": 1.0, "y": -1.9, "z": 0.0 }
+    },
+    {
+      "id": "s5_flooded_short",
+      "a": "first_step",
+      "b": "flooded_ledge",
+      "alignsAtDeg": 90,
+      "toleranceDeg": 6,
+      "start": { "x": -1.2, "y": -0.6, "z": 0.0 },
+      "end":   { "x": -0.4, "y": -1.5, "z": 0.3 }
+    },
+    {
+      "id": "s5_flooded_ledgewall",
+      "a": "flooded_ledge",
+      "b": "flooded_end",
+      "alignsAtDeg": 90,
+      "toleranceDeg": 6,
+      "start": { "x": -0.4, "y": -1.5, "z": 0.3 },
+      "end":   { "x": 0.2,  "y": -1.8, "z": 0.1 }
+    },
+    {
+      "id": "s5_memory_spur",
+      "a": "first_step",
+      "b": "memory_spur_end",
+      "alignsAtDeg": 45,
+      "toleranceDeg": 6,
+      "start": { "x": -1.2, "y": -0.6, "z": 0.0 },
+      "end":   { "x": -0.4, "y": -0.3, "z": -0.9 }
+    }
+  ]
+}

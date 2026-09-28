@@ -1,0 +1,42 @@
+{
+  "id": "level1",
+  "order": 1,
+  "free": true,
+  "goalAnglesDeg": [90],
+  "toleranceDeg": 4,
+  "snapStepDeg": 15,
+  "startAngleDeg": 0,
+  "water": null,
+  "startNode": "village",
+  "goalNode": "landing",
+  "muralAfter": "mural_1",
+  "segments": [
+    {
+      "id": "s_village_gate",
+      "a": "village",
+      "b": "gate",
+      "alignsAtDeg": 0,
+      "toleranceDeg": 90,
+      "start": { "x": -2.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": -1.0, "y": 0.0, "z": 0.0 }
+    },
+    {
+      "id": "s_gate_landing",
+      "a": "gate",
+      "b": "landing",
+      "alignsAtDeg": 90,
+      "toleranceDeg": 4,
+      "start": { "x": -1.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": 0.0,  "y": -1.0, "z": 0.0 }
+    },
+    {
+      "id": "s_decoy_left",
+      "a": "gate",
+      "b": "ledge",
+      "alignsAtDeg": 180,
+      "toleranceDeg": 4,
+      "start": { "x": -1.0, "y": 0.0, "z": 0.0 },
+      "end":   { "x": -1.0, "y": -1.0, "z": 0.0 }
+    }
+  ]
+}
